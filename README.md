@@ -20,7 +20,6 @@ changing chsh
 ```
 ./install_brew_package.sh
 
-chezmoi init --apply hachi-eiji
 ```
 
 ## install tmux
@@ -58,4 +57,9 @@ PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 3.7-dev
 git clone --depth 1 https://github.com/CHH/phpenv.git /tmp/
 cd /tmp/phpenv/bin
 ./phpenv-install.sh
+```
+## apply dotfiles
+
+```
+chezmoi init --apply hachi-eiji
 ```
