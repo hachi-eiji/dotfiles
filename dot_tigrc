@@ -1,0 +1,17 @@
+bind generic g move-first-line
+bind generic G move-last-line
+
+set wrap-lines = true
+set blame-view = date:default author:full id line-number:true,interval=1 text
+set main-view = line-number:true,interval=10 date:default author:full id commit-title:true,graph=true,refs=true
+set refs-view = date:default author:full id ref:true commit-title:true
+set status-view = file-name status:long
+set tree-view = date:default author:full id file-size:units mode file-name
+set diff-view = line-number:true,interval=10 text
+
+bind main  B !git rebase -i %(commit)
+bind diff  B !git rebase -i %(commit)
+
+bind generic P @sh -c 'hub browse -- commit/%(commit)'
+
+color cursor white black bold

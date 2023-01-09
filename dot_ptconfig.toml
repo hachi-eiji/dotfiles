@@ -1,0 +1,2 @@
+hidden = true
+ignore = ["node_modules", "bundle", ".git"]

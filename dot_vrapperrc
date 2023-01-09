@@ -1,0 +1,15 @@
+set ignorecase
+set smartcase
+set autoindent
+syntax on
+inoremap <ESC> <ESC>:set iminsert=0<CR> " ESCでIMEを確実にOFF
+
+"srで参照をプロジェクトから検索
+eclipseaction SearchRef  org.eclipse.jdt.ui.edit.text.java.search.references.in.project
+noremap sr :SearchRef<C-m>
+
+"次のメンバ(フィールド,メソッド)
+eclipseaction GoNextMember org.eclipse.jdt.ui.edit.text.java.goto.next.member
+nnoremap mm :GoNextMember<C-m>
+eclipseaction GoPrevMember org.eclipse.jdt.ui.edit.text.java.goto.previous.member
+nnoremap mp :GoPrevMember<C-m>

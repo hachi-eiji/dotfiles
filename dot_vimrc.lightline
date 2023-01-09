@@ -1,0 +1,65 @@
+" ---
+" lightline の設定
+" ---
+
+let g:lightline = {
+        \ 'colorscheme': 'jellybeans',
+        \ 'active' : {
+        \   'left': [
+        \     ['mode', 'paste'],
+        \     ['fugitive', 'gitgutter', 'filename'],
+        \     ['linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok']
+        \   ],
+        \ },
+        \ 'component': {
+        \   'readonly': '%{&readonly?"\u2b64":""}',
+        \ },
+        \ 'separator': { 'left': "\u2b80", 'right': "\u2b82" },
+        \ 'subseparator': { 'left': "\u2b81", 'right': "\u2b83" },
+        \ 'component_function': {
+        \   'modified': 'MyModified',
+        \   'readonly': 'MyReadonly',
+        \   'fugitive': 'MyFugitive',
+        \   'filename': 'MyFilename'
+        \ },
+        \ 'component_expand': {
+        \   'linter_checking': 'lightline#ale#checking',
+        \   'linter_warnings': 'lightline#ale#warnings',
+        \   'linter_errors': 'lightline#ale#errors',
+        \   'linter_ok': 'lightline#ale#ok',
+        \},
+        \ 'component_type': {
+        \   'linter_checking': 'left',
+        \   'linter_warnings': 'warning',
+        \   'linter_errors': 'error',
+        \   'linter_ok': 'left',
+        \},
+\ }
+
+function! MyModified()
+  return &ft =~ 'help\|vimfiler\|gundo' ? '' : &modified ? '+' : &modifiable ? '' : '-'
+endfunction
+
+function! MyReadonly()
+  return &ft !~? 'help\|vimfiler\|gundo' && &ro ? '⭤' : ''
+endfunction
+
+function! MyFilename()
+  return ('' != MyReadonly() ? MyReadonly() . ' ' : '') .
+        \ (&ft == 'vimfiler' ? vimfiler#get_status_string() :
+        \  &ft == 'unite' ? unite#get_status_string() :
+        \  &ft == 'vimshell' ? substitute(b:vimshell.current_dir,expand('~'),'~','') :
+        \ '' != expand('%:t') ? expand('%:t') : '[No Name]') .
+        \ ('' != MyModified() ? ' ' . MyModified() : '')
+endfunction
+
+function! MyFugitive()
+  try
+    if &ft !~? 'vimfiler\|gundo' && exists('*fugitive#head')
+      let _ = fugitive#head()
+      return strlen(_) ? '⭠ '._ : ''
+    endif
+  catch
+  endtry
+  return ''
+endfunction
