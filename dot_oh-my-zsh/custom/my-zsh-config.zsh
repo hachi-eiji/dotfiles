@@ -52,7 +52,7 @@ fi
 export SHELL='/opt/homebrew/bin/zsh'
 export GOPATH=$HOME/.go/current
 # User configuration
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH:$GOPATH/bin:$GOROOT/bin
+export PATH="$HOME/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH:$GOPATH/bin:$GOROOT/bin:$HOME/.docker/bin"
 #rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - --no-rehash)"
