@@ -23,7 +23,7 @@ function peco-cdr () {
   fi
 }
 zle -N peco-cdr
-bindkey '^x^@' peco-cdr
+bindkey '^x^[' peco-cdr
 
 function peco-git-checkout-b(){
   support-paste
