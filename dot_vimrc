@@ -172,7 +172,6 @@ set list
 set listchars=tab:>.,trail:.,nbsp:%
 
 " ctrp
-nnoremap <silent> <C-@> :let g:cpsm_match_empty_query = 0<CR>:CtrlPMRU<CR>
 nnoremap <silent> <C-p> :let g:cpsm_match_empty_query = 1<CR>:CtrlP<CR>
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_custom_ignore = {
@@ -182,6 +181,7 @@ let g:ctrlp_custom_ignore = {
 let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_use_migemo = 1
 let g:ctrlp_show_hidden = 1
+let g:ctrlp_match_func = {'match': 'ctrlp_matchfuzzy#matcher'}
 
 " memo
 let g:memolist_memo_suffix = "md"
@@ -232,8 +232,6 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=darkgrey ctermbg=darkg
 " lsp エラー検知
 let g:lsp_signs_enabled = 1
 let g:lsp_diagnostics_echo_cursor = 1
-
-let g:ctrlp_match_func = {'match': 'ctrlp_matchfuzzy#matcher'}
 
 filetype plugin indent on
 set imdisable
