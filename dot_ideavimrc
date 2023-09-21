@@ -1,6 +1,0 @@
-imap <c-]> <esc>
-imap <c-h> <backspace>
-set number
-set clipboard+=unnamed
-nnoremap / :action Find <CR>
-set ideajoin
