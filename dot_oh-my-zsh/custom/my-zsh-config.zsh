@@ -65,6 +65,7 @@ export PATH="$PATH:$HOME/.pyenv/bin"
 eval "$(pyenv init - --no-rehash)"
 eval "$(pyenv virtualenv-init -)"
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 path=(

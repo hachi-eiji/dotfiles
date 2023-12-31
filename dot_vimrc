@@ -62,9 +62,6 @@ set wrapscan
 set lazyredraw
 set ttyfast
 
-" オムニ補完のプレビューを無効にする
-set completeopt=menuone
-
 hi clear CursorLine
 highlight CursorLine ctermbg=black guibg=black
 
@@ -97,15 +94,11 @@ Bundle 'Chiel92/vim-autoformat'
 Bundle 'tpope/vim-bundler'
 Bundle 'thinca/vim-quickrun'
 Bundle 'Shougo/vimproc.vim'
-Bundle 'tpope/vim-rails'
 Bundle 'kshenoy/vim-signature'
 "末尾の全角と半角の空白文字を赤くハイライト
 Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'mattn/emmet-vim'
 Bundle 'nazo/pt.vim'
-" Rspec
-Bundle 'tpope/vim-dispatch'
-Bundle 'thoughtbot/vim-rspec'
 " bookmark
 Bundle 'MattesGroeger/vim-bookmarks'
 Bundle 'nathanaelkane/vim-indent-guides'
@@ -209,13 +202,6 @@ let g:quickrun_config = {'_': {
 
 " autoformat
 noremap <F3> :Autoformat<CR>
-
-" RSpec.vim mappings
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-let g:rspec_command = "Dispatch bundle exec rspec {spec}"
-let g:rspec_runner = "os_x_iterm2"
 
 " tagsジャンプの時に複数ある時は一覧表示
 nnoremap <C-]> g<C-]>
