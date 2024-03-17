@@ -6,12 +6,14 @@ charles
 cleanshot
 dash
 discord
+docker
 google-chrome
 iterm2
 jetbrains-toolbox
 karabiner-elements
 kindle
 macvim
+parallels
 pixelsnap
 raycast
 slack
