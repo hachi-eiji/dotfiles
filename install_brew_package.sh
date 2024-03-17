@@ -29,3 +29,6 @@ brew install zsh \
 
 brew tap universal-ctags/universal-ctags
 brew install universal-ctags
+
+# https://aerolite.dev/applite/index.html
+brew install --cask applite
