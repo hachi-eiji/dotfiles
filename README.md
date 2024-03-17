@@ -1,5 +1,18 @@
 # dotfiles
 
+## pull dotfiles
+
+```
+chezmoi init hachi-eiji
+```
+
+## install homebrew package
+
+```
+./others/install_brew_package.sh
+
+```
+
 ## install zsh
 
 ```bash
@@ -15,21 +28,6 @@ changing chsh
 - Shell: /bin/bash
 ```
 
-## install homebrew package
-
-```
-./install_brew_package.sh
-
-```
-
-## install tmux
-
-
-```
-gem install tmuxinator
-
-```
-
 ## install vim vundle
 
 ```
@@ -43,23 +41,8 @@ ln -s <repository>/.vimrc.lightline ~/.vimrc.lightline
 git clone https://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
 ```
 
-## install python
-
-```
-CFLAGS="-I$(brew --prefix readline)/include -I$(brew --prefix openssl)/include -I$(xcrun --show-sdk-path)/usr/include" \
-LDFLAGS="-L$(brew --prefix readline)/lib -L$(brew --prefix openssl)/lib" \
-PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 3.7-dev
-```
-
-## install phpenv
-
-```
-git clone --depth 1 https://github.com/CHH/phpenv.git /tmp/
-cd /tmp/phpenv/bin
-./phpenv-install.sh
-```
 ## apply dotfiles
 
 ```
-chezmoi init --apply hachi-eiji
+chezmoi apply
 ```
