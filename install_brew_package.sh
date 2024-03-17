@@ -23,7 +23,6 @@ brew install zsh \
   awscli \
   goenv \
   icu4c \
-  pyenv pyenv-virtualenv \
   pt \
   peco \
   git-secrets
