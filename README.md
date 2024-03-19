@@ -1,5 +1,9 @@
 # dotfiles
 
+## install font
+https://github.com/yuru7/udev-gothic
+日本語文書向けをつかう
+
 ## pull dotfiles
 
 ```
