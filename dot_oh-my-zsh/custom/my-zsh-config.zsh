@@ -36,10 +36,6 @@ _cache_hosts=($( print_known_hosts ))
 ## source peco function
 source $HOME/.peco_function.zsh
 
-# nodejs setting
-export PATH="$HOME/.nodenv/bin:$PATH"
-eval "$(nodenv init - --no-rehash)"
-
 MAC_VIM='/Applications/MacVim.app/Contents/MacOS/Vim'
 if [ -e "$MAC_VIM" ]; then
   alias vi="env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim \"\$@\""
@@ -49,23 +45,23 @@ else
   export EDITOR=vim
 fi
 
-export SHELL='/opt/homebrew/bin/zsh'
 export GOPATH=$HOME/.go/current
 # User configuration
-export PATH="$HOME/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH:$GOPATH/bin:$GOROOT/bin:$HOME/.docker/bin"
-#rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$PATH:$HOME/bin:/usr/local/bin"
+export PATH="$PATH:$GOPATH/bin:$GOROOT/bin"
+export PATH="$PATH:$HOME/.docker/bin"
+export PATH="$PATH:$HOME/.rbenv/bin"
+export PATH="$PATH:$HOME/.phpenv/bin"
+export PATH="$PATH:$HOME/.pyenv/bin"
+export PATH="$PATH:$HOME/.nodenv/bin"
+export PATH="$PATH:$HOME/.local/bin"
+
 eval "$(rbenv init - --no-rehash)"
 eval "$(direnv hook zsh)"
-export PATH="$PATH:$HOME/.phpenv/bin"
 eval "$(phpenv init - --no-rehash)"
 eval "$(goenv init - --no-rehash)"
-
-export PATH="$PATH:$HOME/.pyenv/bin"
 eval "$(pyenv init - --no-rehash)"
-eval "$(pyenv virtualenv-init -)"
-export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+eval "$(nodenv init - --no-rehash)"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 path=(
@@ -73,23 +69,15 @@ path=(
     $path
 )
 
-# MySQL
-export PATH="/opt/homebrew/opt/mysql-client@8.0/bin:$PATH"
-
 # http://qiita.com/delphinus/items/b04752bb5b64e6cc4ea9
 export LESS='-g -i -M -R -W -N -z-4 -x4'
 # rubocop
 export RUBOCOP_OPTS='-D -S -E'
 
-alias tmux='tmux -u'
-alias t='tmux'
-alias tad='tmux a -d -t'
-alias tl='tmux list-sessions'
 alias ls='ls -G'
 alias ll='ls -tlr'
 alias grum='git fetch upstream && git rebase upstream/master'
 alias push-pr='gpsup && hub pull-request -o'
-test -e ~/.tmuxinator/tmuxinator.zsh && source ~/.tmuxinator/tmuxinator.zsh
 
 # hub setting
 #alias git='hub'
