@@ -45,16 +45,18 @@ else
   export EDITOR=vim
 fi
 
-export GOPATH=$HOME/.go/current
-# User configuration
-export PATH="$PATH:$HOME/bin:/usr/local/bin"
-export PATH="$PATH:$GOPATH/bin:$GOROOT/bin"
-export PATH="$PATH:$HOME/.docker/bin"
-export PATH="$PATH:$HOME/.rbenv/bin"
-export PATH="$PATH:$HOME/.phpenv/bin"
-export PATH="$PATH:$HOME/.pyenv/bin"
-export PATH="$PATH:$HOME/.nodenv/bin"
-export PATH="$PATH:$HOME/.local/bin"
+path=(
+  $path
+  /opt/*/(s|)bin(N-/)
+  $GOPATH/bin(N-/)
+  $GOROOT/bin(N-/)
+  $HOME/.docker/bin(N-/)
+  $HOME/.rbenv/bin(N-/)
+  $HOME/.phpenv/bin(N-/)
+  $HOME/.pyenv/bin(N-/)
+  $HOME/.nodenv/bin(N-/)
+  $HOME/.local/bin(N-/)
+)
 
 eval "$(rbenv init - --no-rehash)"
 eval "$(direnv hook zsh)"
@@ -63,11 +65,7 @@ eval "$(goenv init - --no-rehash)"
 eval "$(pyenv init - --no-rehash)"
 eval "$(nodenv init - --no-rehash)"
 
-# export MANPATH="/usr/local/man:$MANPATH"
-path=(
-    /opt/*/(s|)bin(N-/)
-    $path
-)
+export GOPATH=$HOME/.go/current
 
 # http://qiita.com/delphinus/items/b04752bb5b64e6cc4ea9
 export LESS='-g -i -M -R -W -N -z-4 -x4'
