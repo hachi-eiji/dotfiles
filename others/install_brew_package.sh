@@ -15,7 +15,7 @@ brew install zsh \
   direnv \
   rbenv ruby-build \
   nodenv \
-  pyenv pyenv-virtualenv \
+  pyenv poetry \
   boost \
   icu4c \
   ghq \
