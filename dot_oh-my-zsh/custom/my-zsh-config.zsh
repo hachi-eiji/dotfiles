@@ -53,7 +53,6 @@ path=(
   $HOME/.docker/bin(N-/)
   $HOME/.rbenv/bin(N-/)
   $HOME/.phpenv/bin(N-/)
-  $HOME/.pyenv/bin(N-/)
   $HOME/.nodenv/bin(N-/)
   $HOME/.local/bin(N-/)
 )
@@ -62,7 +61,6 @@ eval "$(rbenv init - --no-rehash)"
 eval "$(direnv hook zsh)"
 eval "$(phpenv init - --no-rehash)"
 eval "$(goenv init - --no-rehash)"
-eval "$(pyenv init - --no-rehash)"
 eval "$(nodenv init - --no-rehash)"
 
 export GOPATH=$HOME/.go/current

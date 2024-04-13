@@ -15,7 +15,7 @@ brew install zsh \
   direnv \
   rbenv ruby-build \
   nodenv \
-  pyenv poetry \
+  rye uv \
   boost \
   icu4c \
   ghq \
@@ -32,3 +32,9 @@ brew install universal-ctags
 
 # https://aerolite.dev/applite/index.html
 brew install --cask applite
+
+# rye setting
+# enable global setting
+rye config --set-bool behavior.use-uv=true
+rye config --set-bool behavior.global-python=true
+rye fetch
