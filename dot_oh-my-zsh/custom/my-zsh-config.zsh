@@ -54,6 +54,7 @@ path=(
   $HOME/.rbenv/bin(N-/)
   $HOME/.phpenv/bin(N-/)
   $HOME/.nodenv/bin(N-/)
+  $HOME/.pyenv/bin(N-/)
   $HOME/.local/bin(N-/)
 )
 
@@ -62,6 +63,7 @@ eval "$(direnv hook zsh)"
 eval "$(phpenv init - --no-rehash)"
 eval "$(goenv init - --no-rehash)"
 eval "$(nodenv init - --no-rehash)"
+eval "$(pyenv init - --no-rehash)"
 
 export GOPATH=$HOME/.go/current
 
