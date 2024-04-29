@@ -45,6 +45,7 @@ else
   export EDITOR=vim
 fi
 
+typeset -U PATH
 path=(
   $path
   /opt/*/(s|)bin(N-/)
