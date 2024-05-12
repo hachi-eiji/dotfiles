@@ -12,6 +12,6 @@ set diff-view = line-number:true,interval=10 text
 bind main  B !git rebase -i %(commit)
 bind diff  B !git rebase -i %(commit)
 
-bind generic P @sh -c 'hub browse -- commit/%(commit)'
+bind generic P @sh -c 'gh browse -- %(commit)'
 
 color cursor white black bold
