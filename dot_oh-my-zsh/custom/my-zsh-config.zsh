@@ -75,11 +75,6 @@ export RUBOCOP_OPTS='-D -S -E'
 
 alias ls='ls -G'
 alias ll='ls -tlr'
-alias grum='git fetch upstream && git rebase upstream/master'
-alias push-pr='gpsup && hub pull-request -o'
-
-# hub setting
-#alias git='hub'
 
 # ctr-sがきかない対策
 stty -ixoff

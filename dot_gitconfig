@@ -1,7 +1,7 @@
 [core]
   excludesfile = ~/.gitignore_global
   autocrlf = input
-	pager = less -R -F -X -N
+  pager = less -R -F -X -N
   ignorecase = false
 [color]
   diff = auto
@@ -11,7 +11,7 @@
 [push]
   default = simple
 [merge]
-	tool = vimdiff2
+  tool = vimdiff2
 [diff]
   tool = vimdiff
   indentHeuristic = true
