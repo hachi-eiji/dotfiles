@@ -1,7 +1,7 @@
 [core]
   excludesfile = ~/.gitignore_global
   autocrlf = input
-  pager = less -R -F -X -N
+  pager = less
   ignorecase = false
 [color]
   diff = auto
