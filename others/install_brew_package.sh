@@ -15,7 +15,7 @@ brew install zsh \
   direnv \
   rbenv ruby-build \
   nodenv \
-  rye uv \
+  uv \
   boost \
   icu4c \
   ghq \
@@ -33,8 +33,11 @@ brew install universal-ctags
 # https://aerolite.dev/applite/index.html
 brew install --cask applite
 
+echo 'install rye(python)'
+# https://rye.astral.sh/guide/installation/
+curl -sSf https://rye.astral.sh/get | bash
+
 # rye setting
 # enable global setting
 rye config --set-bool behavior.use-uv=true
 rye config --set-bool behavior.global-python=true
-rye fetch

@@ -43,6 +43,8 @@ ln -s <repository>/.vimrc.lightline ~/.vimrc.lightline
 
 ```
 git clone https://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
+mkdir $ZSH_CUSTOM/plugins/rye
+rye self completion -s zsh > $ZSH_CUSTOM/plugins/rye/_rye
 ```
 
 ## apply dotfiles
