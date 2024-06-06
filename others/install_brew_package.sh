@@ -25,6 +25,7 @@ brew install zsh \
   icu4c \
   pt \
   peco \
+  coreutils \
   git-secrets
 
 brew tap universal-ctags/universal-ctags
