@@ -1,11 +1,11 @@
 1password
 appcleaner
-bartender
 charles
 cleanshot
 dash
 docker
 google-chrome
+hiddenbar
 iterm2
 jetbrains-toolbox
 karabiner-elements
