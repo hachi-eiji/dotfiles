@@ -4,6 +4,7 @@ charles
 cleanshot
 dash
 docker
+git-credential-manager
 google-chrome
 hiddenbar
 iterm2
