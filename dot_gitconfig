@@ -33,6 +33,8 @@
 [rebase]
   autostash=true
 [credential]
+	helper = osxkeychain
+	helper = 
 	helper = /usr/local/share/gcm-core/git-credential-manager
 [filter "lfs"]
 	clean = git-lfs clean -- %f
@@ -67,3 +69,5 @@
 	ff = only
 [includeIf "gitdir:~/development/github.com/stockmarkteam/**"]
   path = .gitconfig.local
+[credential "https://dev.azure.com"]
+	useHttpPath = true
