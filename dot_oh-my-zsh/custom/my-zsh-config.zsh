@@ -63,6 +63,8 @@ eval "$(direnv hook zsh)"
 eval "$(phpenv init - --no-rehash)"
 eval "$(goenv init - --no-rehash)"
 eval "$(nodenv init - --no-rehash)"
+
+source "$HOME/.cargo/env"
 source "$HOME/.rye/env"
 
 export GOPATH=$HOME/.go/current

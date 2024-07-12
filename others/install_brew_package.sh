@@ -25,6 +25,7 @@ brew install zsh \
   icu4c \
   pt \
   peco \
+  rustup-init \
   git-secrets
 
 brew tap universal-ctags/universal-ctags
@@ -32,6 +33,9 @@ brew install universal-ctags
 
 # https://aerolite.dev/applite/index.html
 brew install --cask applite
+
+# install Rust(for ruby + YJIT)
+rustup-init -y
 
 echo 'install rye(python)'
 # https://rye.astral.sh/guide/installation/
