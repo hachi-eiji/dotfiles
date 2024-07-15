@@ -58,7 +58,7 @@ path=(
   $HOME/.local/bin(N-/)
 )
 
-eval "$(rbenv init - --no-rehash)"
+eval "$(rbenv init - --no-rehash zsh)"
 eval "$(direnv hook zsh)"
 eval "$(phpenv init - --no-rehash)"
 eval "$(goenv init - --no-rehash)"
