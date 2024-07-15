@@ -58,11 +58,8 @@ path=(
   $HOME/.local/bin(N-/)
 )
 
-eval "$(rbenv init - --no-rehash zsh)"
-eval "$(direnv hook zsh)"
-eval "$(phpenv init - --no-rehash)"
-eval "$(goenv init - --no-rehash)"
-eval "$(nodenv init - --no-rehash)"
+eval "$(phpenv init - zsh)"
+eval "$(goenv init -)"
 
 source "$HOME/.cargo/env"
 source "$HOME/.rye/env"
