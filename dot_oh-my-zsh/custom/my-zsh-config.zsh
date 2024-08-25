@@ -62,7 +62,7 @@ eval "$(phpenv init - zsh)"
 eval "$(goenv init -)"
 
 source "$HOME/.cargo/env"
-source "$HOME/.rye/env"
+eval "$(uv generate-shell-completion zsh)"
 
 export GOPATH=$HOME/.go/current
 
