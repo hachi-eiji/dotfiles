@@ -11,7 +11,7 @@
 [push]
   default = simple
 [merge]
-  tool = vimdiff2
+  tool = vimdiff
 [diff]
   tool = vimdiff
   indentHeuristic = true
