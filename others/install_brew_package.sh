@@ -36,12 +36,3 @@ brew install --cask applite
 
 # install Rust(for ruby + YJIT)
 rustup-init -y
-
-echo 'install rye(python)'
-# https://rye.astral.sh/guide/installation/
-curl -sSf https://rye.astral.sh/get | bash
-
-# rye setting
-# enable global setting
-rye config --set-bool behavior.use-uv=true
-rye config --set-bool behavior.global-python=true
