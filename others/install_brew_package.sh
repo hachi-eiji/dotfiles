@@ -21,7 +21,6 @@ brew install zsh \
   ghq \
   jq \
   awscli \
-  goenv \
   icu4c \
   pt \
   peco \
