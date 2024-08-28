@@ -1,6 +1,6 @@
 fpath=($fpath $HOME/.zsh-functions/)
 
-autoload -U compinit && compinit
+autoload -Uz compinit && compinit
 
 # ヒストリの設定
 HISTFILE=~/.zsh_history
@@ -26,9 +26,9 @@ setopt hist_no_store
 # 重複を記録しない
 setopt hist_ignore_dups
 
-function print_known_hosts (){ 
+function print_known_hosts (){
 if [ -f $HOME/.ssh/known_hosts ]; then
-cat $HOME/.ssh/known_hosts | tr ',' ' ' | cut -d' ' -f1 
+cat $HOME/.ssh/known_hosts | tr ',' ' ' | cut -d' ' -f1
 fi
 }
 _cache_hosts=($( print_known_hosts ))
@@ -59,7 +59,6 @@ path=(
 )
 
 eval "$(phpenv init - zsh)"
-eval "$(goenv init -)"
 
 source "$HOME/.cargo/env"
 eval "$(uv generate-shell-completion zsh)"
