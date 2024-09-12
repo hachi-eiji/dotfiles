@@ -13,8 +13,7 @@ brew install zsh \
   gh \
   editorconfig \
   direnv \
-  rbenv ruby-build \
-  nodenv \
+  mise \
   uv \
   boost \
   icu4c \

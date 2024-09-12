@@ -52,13 +52,10 @@ path=(
   $GOPATH/bin(N-/)
   $GOROOT/bin(N-/)
   $HOME/.docker/bin(N-/)
-  $HOME/.rbenv/bin(N-/)
-  $HOME/.phpenv/bin(N-/)
-  $HOME/.nodenv/bin(N-/)
   $HOME/.local/bin(N-/)
 )
 
-eval "$(phpenv init - zsh)"
+eval "$(mise activate zsh)"
 
 source "$HOME/.cargo/env"
 eval "$(uv generate-shell-completion zsh)"
