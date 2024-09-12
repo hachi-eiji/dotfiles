@@ -16,18 +16,13 @@
   tool = vimdiff
   indentHeuristic = true
 [alias]
-  ad = add
   fto = fetch -p origin
   cm = commit
-  s  = status
-  st = status -sb
 # checkout
   co = checkout
   cob = checkout -b
-  cod = checkout develop
-  com = checkout master
   ac = !git add -A && git commit
-  fetch-pulls = fetch origin +refs/pull/*:refs/remotes/pull/*
+  mod = merge origin/development
 [ghq]
   root = ~/development
 [rebase]
