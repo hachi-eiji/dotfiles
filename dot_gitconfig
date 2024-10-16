@@ -27,9 +27,6 @@
   root = ~/development
 [rebase]
   autostash=true
-[credential]
-	helper = 
-	helper = /usr/local/share/gcm-core/git-credential-manager
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -63,5 +60,8 @@
 	ff = only
 [includeIf "gitdir:~/development/github.com/stockmarkteam/**"]
   path = .gitconfig.local
+[credential]
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager
 [credential "https://dev.azure.com"]
 	useHttpPath = true
