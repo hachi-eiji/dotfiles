@@ -6,6 +6,7 @@ railways.cache
 .rakeTasks
 tags
 .envrc
+.mise.toml
 .env
 *.orig
 vendor/bundle
