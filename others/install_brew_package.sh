@@ -12,7 +12,6 @@ brew install zsh \
   tig \
   gh \
   editorconfig \
-  direnv \
   mise \
   uv \
   boost \
