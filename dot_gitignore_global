@@ -6,7 +6,7 @@ railways.cache
 .rakeTasks
 tags
 .envrc
-.mise.toml
+.mise.local.toml
 .memo.local.md
 .env
 *.orig
