@@ -7,7 +7,7 @@ railways.cache
 tags
 .envrc
 .mise.local.toml
-.memo.local.md
+.memo.local.*
 .env
 *.orig
 vendor/bundle
