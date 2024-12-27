@@ -5,4 +5,4 @@ copy-on-select=true
 window-padding-x=8
 window-height=50
 window-width=150
-keybind=global:unconsumed:shift+ctrl+q=toggle_quick_terminal
+keybind=global:unconsumed:shift+ctrl+i=toggle_quick_terminal
