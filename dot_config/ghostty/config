@@ -3,6 +3,8 @@ font-family="UDEV Gothic 35JPDOC"
 font-size="13"
 copy-on-select=true
 window-padding-x=8
+window-padding-balance=true
 window-height=50
 window-width=150
-keybind=global:unconsumed:shift+ctrl+i=toggle_quick_terminal
+cursor-style="block"
+keybind="global:unconsumed:shift+ctrl+i=toggle_quick_terminal"
