@@ -1,6 +1,7 @@
 theme="Dracula+"
 font-family="UDEV Gothic 35JPDOC"
 font-size="13"
+font-feature = -dlig
 copy-on-select=true
 window-padding-x=8
 window-padding-balance=true
