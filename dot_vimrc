@@ -1,4 +1,6 @@
-filetype off                   " required!
+call plug#begin()
+
+set imdisable
 let mapleader = "\<Space>"
 set number
 syntax on
@@ -36,14 +38,14 @@ source $VIMRUNTIME/macros/matchit.vim " Vimの「%」を拡張する
 
 " ペーストで右にならない
 if &term =~ "xterm"
-    let &t_SI .= "\e[?2004h"
-    let &t_EI .= "\e[?2004l"
-    let &pastetoggle = "\e[201~"
-    function XTermPasteBegin(ret)
-        set paste
-        return a:ret
-    endfunction
-    inoremap <special> <expr> <Esc>[200~ XTermPasteBegin("")
+  let &t_SI .= "\e[?2004h"
+  let &t_EI .= "\e[?2004l"
+  let &pastetoggle = "\e[201~"
+  function XTermPasteBegin(ret)
+    set paste
+    return a:ret
+  endfunction
+  inoremap <special> <expr> <Esc>[200~ XTermPasteBegin("")
 endif
 
 " backup
@@ -65,57 +67,54 @@ set ttyfast
 hi clear CursorLine
 highlight CursorLine ctermbg=black guibg=black
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'hachi-eiji/jellybeans.vim'
-Bundle 'gmarik/vundle'
-Bundle 'kana/vim-fakeclip'
+Plug 'hachi-eiji/jellybeans.vim'
+Plug 'kana/vim-fakeclip'
 " markdown
-Bundle 'tpope/vim-markdown'
-Bundle 't9md/vim-choosewin'
-Bundle 'itchyny/lightline.vim'
-Bundle 'tpope/vim-endwise'
-Bundle 'rizzatti/dash.vim'
-Bundle 'tomasr/molokai'
-Bundle 'previm/previm'
-Bundle 'editorconfig/editorconfig-vim'
+Plug 'tpope/vim-markdown'
+Plug 't9md/vim-choosewin'
+Plug 'itchyny/lightline.vim'
+Plug 'tpope/vim-endwise'
+Plug 'rizzatti/dash.vim'
+Plug 'tomasr/molokai'
+Plug 'previm/previm'
+Plug 'editorconfig/editorconfig-vim'
 " git
-Bundle 'tpope/vim-fugitive'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'cohama/lexima.vim'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'vim-scripts/ruby-matchit'
-Bundle 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'cohama/lexima.vim'
+Plug 'vim-ruby/vim-ruby'
+Plug 'vim-scripts/ruby-matchit'
+Plug 'ctrlpvim/ctrlp.vim'
 " ctrlp で日本語検索
-Bundle 'haya14busa/vim-migemo'
-Bundle 'glidenote/memolist.vim'
-Bundle 'tomtom/tcomment_vim'
-Bundle 'Chiel92/vim-autoformat'
-Bundle 'tpope/vim-bundler'
-Bundle 'thinca/vim-quickrun'
-Bundle 'Shougo/vimproc.vim'
-Bundle 'kshenoy/vim-signature'
+Plug 'haya14busa/vim-migemo'
+Plug 'glidenote/memolist.vim'
+Plug 'tomtom/tcomment_vim'
+Plug 'Chiel92/vim-autoformat'
+Plug 'tpope/vim-bundler'
+Plug 'thinca/vim-quickrun'
+Plug 'Shougo/vimproc.vim'
+Plug 'kshenoy/vim-signature'
 "末尾の全角と半角の空白文字を赤くハイライト
-Bundle 'bronson/vim-trailing-whitespace'
-Bundle 'mattn/emmet-vim'
-Bundle 'nazo/pt.vim'
+Plug 'bronson/vim-trailing-whitespace'
+Plug 'mattn/emmet-vim'
+Plug 'nazo/pt.vim'
 " bookmark
-Bundle 'MattesGroeger/vim-bookmarks'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'hotwatermorning/auto-git-diff'
-Bundle 'k0kubun/vim-open-github'
-Bundle 'KeyboardFire/vim-minisnip'
-Bundle 'prettier/vim-prettier'
+Plug 'MattesGroeger/vim-bookmarks'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'hotwatermorning/auto-git-diff'
+Plug 'k0kubun/vim-open-github'
+Plug 'KeyboardFire/vim-minisnip'
+Plug 'prettier/vim-prettier'
 " vim-lsp
-Bundle 'prabirshrestha/async.vim'
-Bundle 'prabirshrestha/vim-lsp'
-Bundle 'mattn/vim-lsp-settings'
-Bundle 'prabirshrestha/asyncomplete.vim'
-Bundle 'prabirshrestha/asyncomplete-lsp.vim'
-Bundle 'majutsushi/tagbar'
-Bundle 'mattn/vim-goimports'
-Bundle 'Quramy/tsuquyomi'
-Bundle 'mattn/ctrlp-matchfuzzy'
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'majutsushi/tagbar'
+Plug 'mattn/vim-goimports'
+Plug 'Quramy/tsuquyomi'
+Plug 'mattn/ctrlp-matchfuzzy'
 
 " if you want to use overlay feature
 let g:choosewin_overlay_enable          = 1
@@ -146,7 +145,6 @@ nnoremap <silent> <C-L> :noh<C-L><CR>
 " editorconfig
 let g:EditorConfig_exec_path = '/usr/local/bin/editorconfig'
 
-colorscheme jellybeans
 highlight! Normal ctermbg=NONE guibg=NONE
 highlight! NonText ctermbg=NONE guibg=NONE
 highlight! LineNr ctermbg=NONE guibg=NONE
@@ -168,9 +166,9 @@ set listchars=tab:>.,trail:.,nbsp:%
 nnoremap <silent> <C-p> :let g:cpsm_match_empty_query = 1<CR>:CtrlP<CR>
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v([\/]\.(git|hg|svn)$|[\/]bundle$|[\/]node_modules$)',
-  \ 'file': '\v\.(exe|so|dll|gif|png|jpeg|jpg|pdf|mp3|cache)$'
-  \ }
+      \ 'dir':  '\v([\/]\.(git|hg|svn)$|[\/]bundle$|[\/]node_modules$)',
+      \ 'file': '\v\.(exe|so|dll|gif|png|jpeg|jpg|pdf|mp3|cache)$'
+      \ }
 let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_use_migemo = 1
 let g:ctrlp_show_hidden = 1
@@ -187,9 +185,6 @@ nmap <silent> <leader>d <Plug>DashSearch
 
 set conceallevel=0
 let g:vim_json_syntax_conceal=0
-
-nmap <silent> <C-k> <Plug>(ale_previous_wrap)
-nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 " quick-run
 let g:quickrun_config = {'_': {
@@ -218,5 +213,5 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=darkgrey ctermbg=darkg
 let g:lsp_signs_enabled = 1
 let g:lsp_diagnostics_echo_cursor = 1
 
-filetype plugin indent on
-set imdisable
+call plug#end()
+colorscheme jellybeans
