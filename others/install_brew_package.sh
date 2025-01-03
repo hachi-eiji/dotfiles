@@ -7,8 +7,6 @@ brew install zsh \
   chezmoi \
   git \
   cmake \
-  tmux reattach-to-user-namespace \
-  mosh \
   tig \
   gh \
   editorconfig \
