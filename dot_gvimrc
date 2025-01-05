@@ -8,6 +8,7 @@ autocmd FileType text setlocal textwidth=0
 set visualbell t_vb= 
 set smartindent
 set guifont=UDEVGothic35JPDOC-Regular:h13
+set antialias
 
 source ~/.zshrc
 

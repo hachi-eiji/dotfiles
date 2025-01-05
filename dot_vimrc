@@ -5,7 +5,6 @@ let mapleader = "\<Space>"
 set number
 syntax on
 set t_Co=256
-set antialias
 set ambiwidth=double
 
 """ ignored files in vimgrep
