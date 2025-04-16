@@ -10,6 +10,10 @@
   interactive = auto
 [push]
   default = simple
+[pull]
+  ff = only
+[fetch]
+  prune = true
 [merge]
   tool = vimdiff2
 [diff]
@@ -56,8 +60,6 @@
 	patterns = (\"|')?(AWS|aws|Aws)?_?(ACCOUNT|account|Account)_?(ID|id|Id)?(\"|')?\\s*(:|=>|=)\\s*(\"|')?[0-9]{4}\\-?[0-9]{4}\\-?[0-9]{4}(\"|')?
 	allowed = AKIAIOSFODNN7EXAMPLE
 	allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
-[pull]
-	ff = only
 [includeIf "gitdir:~/development/github.com/stockmarkteam/**"]
   path = .gitconfig.local
 [credential]
