@@ -175,6 +175,7 @@ let g:ctrlp_match_func = {'match': 'ctrlp_matchfuzzy#matcher'}
 
 " memo
 let g:memolist_memo_suffix = "md"
+let g:memolist_path = "$HOME/Documents/memo"
 nnoremap <Leader>mn  :MemoNew<CR>
 nnoremap <Leader>ml  :MemoList<CR>
 nnoremap <Leader>mg  :MemoGrep<CR>
