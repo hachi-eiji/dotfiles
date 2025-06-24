@@ -37,7 +37,7 @@ changing chsh
 ```
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+ln -s <repository>/.vimrc.lightline ~/.vimrc.lightline
 ```
 
 ## install oh-my-zsh

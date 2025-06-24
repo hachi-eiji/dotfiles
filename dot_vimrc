@@ -79,6 +79,7 @@ Plug 'previm/previm'
 Plug 'editorconfig/editorconfig-vim'
 " git
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 Plug 'airblade/vim-gitgutter'
 Plug 'cohama/lexima.vim'
 Plug 'vim-ruby/vim-ruby'
