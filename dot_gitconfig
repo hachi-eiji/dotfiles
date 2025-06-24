@@ -28,6 +28,7 @@
   cob = checkout -b
   ac = !git add -A && git commit
   mod = merge origin/development
+  rod = rebase -i origin/development
 [ghq]
   root = ~/development
 [rebase]
