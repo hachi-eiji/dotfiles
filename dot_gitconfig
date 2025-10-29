@@ -20,12 +20,6 @@
   tool = vimdiff
   indentHeuristic = true
 [alias]
-  fto = fetch -p origin
-  cm = commit
-# checkout
-  co = checkout
-  cob = checkout -b
-  ac = !git add -A && git commit
   mod = merge origin/development
   rod = rebase -i origin/development
 [ghq]
