@@ -1,2 +1,4 @@
 discord
 burp-suite
+parallels
+zoom
