@@ -10,7 +10,6 @@ karabiner-elements
 macvim
 orbstack
 parallels
-pixelsnap
 raycast
 slack
 todoist
