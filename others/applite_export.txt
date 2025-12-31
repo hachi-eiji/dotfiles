@@ -5,7 +5,6 @@ cleanshot
 dash
 git-credential-manager
 google-chrome
-iterm2
 jetbrains-toolbox
 karabiner-elements
 macvim-app
@@ -13,3 +12,4 @@ orbstack
 raycast
 slack
 todoist-app
+wezterm
