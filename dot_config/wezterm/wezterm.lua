@@ -18,6 +18,7 @@ config.color_scheme = 'Dracula+'
 config.default_cursor_style = 'SteadyBlock'
 -- IMEでの変換時にCtrl-HするとWezTermにキー入力が食われる
 config.macos_forward_to_ime_modifier_mask = 'SHIFT|CTRL'
+config.window_close_confirmation = 'NeverPrompt'
 
 
 -- change active tab bar
@@ -30,7 +31,7 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_wid
    foreground = "#FFFFFF"
  end
 
- local title = wezterm.truncate_right((tab.tab_index + 1) .. ": " tab.active_pane.title, max_width - 1) .. "   "
+ local title = wezterm.truncate_right((tab.tab_index + 1) .. ": " .. tab.active_pane.title, max_width - 1) .. "   "
 
  return {
    { Background = { Color = background } },
