@@ -21,8 +21,7 @@
   tool = vimdiff
   indentHeuristic = true
 [alias]
-  mod = merge origin/development
-  rod = rebase -i origin/development
+  pushf = push --force-with-lease --force-if-includes
 [ghq]
   root = ~/development
 [rebase]
