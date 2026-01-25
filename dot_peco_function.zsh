@@ -114,5 +114,16 @@ function peco-ghq() {
 zle -N peco-ghq
 bindkey '^x^g' peco-ghq
 
+function peco-git-wt(){
+  support-paste
+  local selected_wt=$(git wt | tail -n +2 | peco | awk '{print $(NF-1)}')
+  if [ -n "$selected_wt" ]; then
+    BUFFER="git wt ${selected_wt}"
+    zle accept-line
+  fi
+}
+zle -N peco-git-wt
+bindkey '^x^w' peco-git-wt
+
 file=$HOME/.config/local_peco_functions.zsh
 test -e $file && source $HOME/.config/local_peco_functions.zsh

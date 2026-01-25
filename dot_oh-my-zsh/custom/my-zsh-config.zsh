@@ -60,6 +60,10 @@ eval "$(mise activate zsh)"
 source "$HOME/.cargo/env"
 eval "$(uv generate-shell-completion zsh)"
 
+# git worktree
+# https://github.com/k1LoW/git-wt
+eval "$(git wt --init zsh)"
+
 export GOPATH=$HOME/.go/current
 
 # http://qiita.com/delphinus/items/b04752bb5b64e6cc4ea9
