@@ -12,4 +12,4 @@ orbstack
 raycast
 slack
 todoist-app
-wezterm
+ghostty
