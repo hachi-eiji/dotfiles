@@ -18,7 +18,7 @@ brew install zsh \
   jq \
   awscli \
   icu4c \
-  pt \
+  ripgrep \
   peco \
   rustup-init \
   git-secrets

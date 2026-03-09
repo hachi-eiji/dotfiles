@@ -97,7 +97,6 @@ Plug 'kshenoy/vim-signature'
 "末尾の全角と半角の空白文字を赤くハイライト
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'mattn/emmet-vim'
-Plug 'nazo/pt.vim'
 " bookmark
 Plug 'MattesGroeger/vim-bookmarks'
 Plug 'nathanaelkane/vim-indent-guides'
