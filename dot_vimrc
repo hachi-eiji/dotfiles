@@ -213,5 +213,11 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=darkgrey ctermbg=darkg
 let g:lsp_signs_enabled = 1
 let g:lsp_diagnostics_echo_cursor = 1
 
+" :grepでripgrep
+if executable("rg")
+    let &grepprg = 'rg --vimgrep --hidden --no-heading --smart-case > /dev/null'
+    set grepformat=%f:%l:%c:%m
+endif
+
 call plug#end()
 colorscheme jellybeans
