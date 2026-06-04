@@ -1,4 +1,4 @@
-term = xterm-256color
+#term = xterm-256color
 theme="Dracula+"
 font-family="UDEV Gothic 35JPDOC"
 font-size="13"
