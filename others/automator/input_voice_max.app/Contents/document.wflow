@@ -59,7 +59,7 @@
 					<key>muteOutput</key>
 					<false/>
 					<key>outputSetting</key>
-					<real>52.113715277777771</real>
+					<real>100</real>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.SetComputerVolume</string>
@@ -285,12 +285,10 @@
 						<string>2</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<integer>1</integer>
 				<key>location</key>
-				<string>309.000000:631.000000</string>
+				<string>309.000000:451.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Display Notification.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -300,7 +298,7 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>A2983E2A-55D6-4369-BB78-893E3366F78D</key>
+		<key>87D01EFD-9835-4511-BD83-B9BBE71199DE</key>
 		<dict>
 			<key>from</key>
 			<string>10DB2156-6FA9-491F-BFD7-94F81ED9B003 - 10DB2156-6FA9-491F-BFD7-94F81ED9B003</string>
