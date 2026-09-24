@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>534</string>
+	<string>534.1</string>
 	<key>AMApplicationVersion</key>
 	<string>2.10</string>
 	<key>AMDocumentVersion</key>
@@ -59,7 +59,7 @@
 					<key>muteOutput</key>
 					<false/>
 					<key>outputSetting</key>
-					<real>100</real>
+					<real>36.077260216226946</real>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.SetComputerVolume</string>
@@ -153,7 +153,7 @@
 				<key>isViewVisible</key>
 				<integer>1</integer>
 				<key>location</key>
-				<string>309.000000:259.000000</string>
+				<string>309.000000:439.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Computer Volume.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -288,7 +288,7 @@
 				<key>isViewVisible</key>
 				<integer>1</integer>
 				<key>location</key>
-				<string>309.000000:451.000000</string>
+				<string>309.000000:631.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Display Notification.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -298,7 +298,7 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>9B4BEAE7-5060-4810-87F5-B55C95DDBA10</key>
+		<key>E44D9C53-DFED-45E5-ABEE-221097F7122F</key>
 		<dict>
 			<key>from</key>
 			<string>F6A786DD-7413-422B-AA7F-81C6C1422C29 - F6A786DD-7413-422B-AA7F-81C6C1422C29</string>
