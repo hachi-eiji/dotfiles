@@ -47,8 +47,8 @@ fi
 
 typeset -U PATH
 path=(
-  $path
   /opt/*/(s|)bin(N-/)
+  $path
   $GOPATH/bin(N-/)
   $GOROOT/bin(N-/)
   $HOME/.docker/bin(N-/)
