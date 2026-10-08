@@ -59,7 +59,7 @@
 					<key>muteOutput</key>
 					<false/>
 					<key>outputSetting</key>
-					<real>50.564236111111114</real>
+					<real>74.956476323119787</real>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.SetComputerVolume</string>
@@ -298,7 +298,7 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>3DFCAAC2-1226-4A7A-B9B7-EB005EE15F53</key>
+		<key>1920596C-054D-42DD-95F4-550E56DC7E9B</key>
 		<dict>
 			<key>from</key>
 			<string>10DB2156-6FA9-491F-BFD7-94F81ED9B003 - 10DB2156-6FA9-491F-BFD7-94F81ED9B003</string>
