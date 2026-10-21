@@ -55,11 +55,11 @@
 					<key>alertSetting</key>
 					<integer>-1</integer>
 					<key>inputSetting</key>
-					<real>99.993489583333329</real>
+					<real>75.883246527777786</real>
 					<key>muteOutput</key>
 					<false/>
 					<key>outputSetting</key>
-					<real>74.956476323119787</real>
+					<real>100</real>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.SetComputerVolume</string>
@@ -298,7 +298,7 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>1920596C-054D-42DD-95F4-550E56DC7E9B</key>
+		<key>2B56A803-78C5-457A-BC94-81361A74DE0C</key>
 		<dict>
 			<key>from</key>
 			<string>10DB2156-6FA9-491F-BFD7-94F81ED9B003 - 10DB2156-6FA9-491F-BFD7-94F81ED9B003</string>
