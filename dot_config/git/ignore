@@ -12,4 +12,4 @@ tags
 *.orig
 vendor/bundle
 node_modules
-Gemfile.local.*
+Gemfile.local*
