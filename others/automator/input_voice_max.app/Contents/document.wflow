@@ -55,11 +55,24 @@
 					<key>alertSetting</key>
 					<integer>-1</integer>
 					<key>inputSetting</key>
-					<real>75.883246527777786</real>
+					<real>100</real>
 					<key>muteOutput</key>
 					<false/>
 					<key>outputSetting</key>
 					<real>100</real>
+				</dict>
+				<key>ActionRuntimeParameters</key>
+				<dict>
+					<key>alertSetting</key>
+					<integer>-1</integer>
+					<key>inputSetting</key>
+					<real>100</real>
+					<key>muteOutput</key>
+					<false/>
+					<key>outputSetting</key>
+					<real>100</real>
+					<key>temporary items path</key>
+					<string>/var/folders/jk/n7k7z4kj7ls1vh2stwd9n96h0000gn/T/4F9A1D3A-F87C-4AD6-A8D2-EC04DE13C83C/1/com.apple.Automator.SetComputerVolume</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.SetComputerVolume</string>
@@ -298,7 +311,7 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>2B56A803-78C5-457A-BC94-81361A74DE0C</key>
+		<key>53A99F8F-2A61-41E2-9BEF-C3F614268AAA</key>
 		<dict>
 			<key>from</key>
 			<string>10DB2156-6FA9-491F-BFD7-94F81ED9B003 - 10DB2156-6FA9-491F-BFD7-94F81ED9B003</string>
